@@ -1,0 +1,36 @@
+How to find the flag:
+
+* Launch the inspector on the homepage
+* Click on the href link hidden in the footer : <a href="?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f"><li>&copy; BornToSec</li></a>
+* Discover a hidden page with informations about the Albatros and an image and a hidden text in the <div class="container"> saying : 
+    "You must come from : "https://www.nsa.gov/"."
+    [...]
+    "Let's use this browser : "ft_bornToSec". It will help you a lot !"
+
+* Use curl to impersonate the browser ft_bornToSec coming from https://www.nsa.gov: 
+
+    curl -A "ft_bornToSec" -e "https://www.nsa.gov/" -L "http://192.168.56.101/?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f" | grep flag
+
+* How it works :
+
+    -A "ft_bornToSec": This option sets the User-Agent header of the HTTP request. The User-Agent is a header that identifies the client (in this case, cURL) to the server. Here, it is set as "ft_bornToSec".
+
+    -e "https://www.nsa.gov/": The -e or --referer option specifies the Referer header. This header indicates which URL the browser accessed before accessing the current URL. In this example, it is set to "https://www.nsa.gov/", which means cURL simulates coming from the site www.nsa.gov.
+
+    -L: This option instructs cURL to follow redirects automatically. If the server responds with a status code indicating a redirection (e.g., 301 or 302), cURL will follow the redirection and request the new URL.
+
+Risks:
+* DDOS attacks using many different ips
+
+How to avoid:
+* HTTP header encryption : use HTTPS signed certificates. They are issued by trusted Certificate Authorities (CAs), ensuring that the server's identity is authenticated. HTTPS encrypts communication between the client and server, protecting against eavesdropping and man-in-the-middle attacks. 
+Even if an attacker spoofs an IP address, they cannot decrypt the encrypted data without the proper keys.
+* Use Packet Filtering with firewalls and IDS : 
+-> Deploy firewalls to filter traffic, blocking access from unauthorized sources and spoofed IP addresses. Firewalls can inspect IP packet headers to ensure they are legitimate.
+-> The IDS is designed to detect and alert on potential malicious activities or policy violations within a network. It does not block traffic but monitors and analyzes it for suspicious behavior.
+
+Sources:
+https://owasp.org/www-community/pages/attacks/ip_spoofing_via_http_headers
+https://www.baeldung.com/linux/curl-test-ip-spoofing
+https://en.wikipedia.org/wiki/IP_address_spoofing#:~:text=In%20computer%20networking%2C%20IP%20address,of%20impersonating%20another%20computing%20system
+
