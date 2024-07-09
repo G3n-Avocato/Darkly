@@ -1,3 +1,5 @@
+IP spoofing allows you to pose as a reliable source to another machine, site, server, network.
+
 How to find the flag:
 
 * Launch the inspector on the homepage
@@ -20,17 +22,31 @@ How to find the flag:
     -L: This option instructs cURL to follow redirects automatically. If the server responds with a status code indicating a redirection (e.g., 301 or 302), cURL will follow the redirection and request the new URL.
 
 Risks:
-* DDOS attacks using many different ips
+* DDOS attacks using many different IPs, to overwhelm computer servers with packets of data, it slows down or crash a website/network.
+* IP spoofing allows you to hide the infiltration of a network by botnets.
+* Can allows you to bypass authentication, access user sessions, access sensitive or private data, allows unauthorized execution of code or commands.
+* Man in the middle attacks
 
 How to avoid:
-* HTTP header encryption : use HTTPS signed certificates. They are issued by trusted Certificate Authorities (CAs), ensuring that the server's identity is authenticated. HTTPS encrypts communication between the client and server, protecting against eavesdropping and man-in-the-middle attacks. 
-Even if an attacker spoofs an IP address, they cannot decrypt the encrypted data without the proper keys.
-* Use Packet Filtering with firewalls and IDS : 
+- It's necessary to use these methods together in order to be truly protected against it.
+
+* Detect IP spoofing/Deploying packet filtering:
+- It's difficult to detect IP spoofing because this doesn'leave external sign. But we can use network monitoring tools to analyze traffic at endpoints.
+
+-> Packet filtering systems, there are two : Ingress filtering and Egress filtering.
+First looks at incoming packets, checks source IP header to verify it matches with an authorized ip source.
+Second looks at outgoing packets, checks source IP addresses that don't match with those on the organization's network for prevent insiders from launching IP spoofing attacks.
+
+** Use Packet Filtering with firewalls and IDS : 
 -> Deploy firewalls to filter traffic, blocking access from unauthorized sources and spoofed IP addresses. Firewalls can inspect IP packet headers to ensure they are legitimate.
 -> The IDS is designed to detect and alert on potential malicious activities or policy violations within a network. It does not block traffic but monitors and analyzes it for suspicious behavior.
+
+* Using robust verification methods, even among networked computers, can prevent the development of a botnetwork in the case where a computer in a network is infected.
+
+* Migrate sites to IPv6, it makes Ip IP spoofing harder by including encryption and authentication steps. Hight proportion of the world's internet traffic still uses IPv4.
 
 Sources:
 https://owasp.org/www-community/pages/attacks/ip_spoofing_via_http_headers
 https://www.baeldung.com/linux/curl-test-ip-spoofing
 https://en.wikipedia.org/wiki/IP_address_spoofing#:~:text=In%20computer%20networking%2C%20IP%20address,of%20impersonating%20another%20computing%20system
-
+https://usa.kaspersky.com/resource-center/threats/ip-spoofing
