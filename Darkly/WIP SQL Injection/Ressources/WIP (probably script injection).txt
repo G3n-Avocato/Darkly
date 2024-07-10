@@ -1,0 +1,51 @@
+How to find the flag:
+* Go to the member page
+* Do a regular text query and understand that it returns SQL MariaDB errors
+
+Enter the following commands:
+
+* 105 OR 1=1 
+-> By injecting 105 OR 1=1 into a vulnerable SQL query, the attacker attempts to manipulate the logic of the query to always return true (1=1). 
+-> This can bypass authentication or access control mechanisms if the application does not properly sanitize input. 
+-> In this context the command displays the member list. The fourth one has the fields : id (105 OR 1=1), first name (Flag), surname (GetThe).
+-> We now need to find where these informations are stored in the database.
+
+* ID: 105 OR 1=1 UNION SELECT table_name, table_schema FROM information_schema.tables 
+-> With this command we display all the schemas and their tables and discover that there's a table called 'users'.
+-> This table is probably the best place to find the flag. 
+
+* 105 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.columns
+-> The intention behind this SQL line is to retrieve the names of tables and their respective columns from the information_schema.columns table.
+-> We now have a list of all the columns of the 'users' table
+
+* 105 OR 1=1 UNION SELECT countersign, 1 FROM users
+-> In the countersign field of our "GetThe Flag" user we find a hashed code in MD5 : 5ff9d0165b4f92b14994e5c685cdce28. 
+-> When we decode it we find "FortyTwo".
+-> We can't do anything with it yet.
+
+* 105 OR 1=1 UNION SELECT Commentaire, 1 FROM users
+-> In the Commentaire field we find an explanation of how to retrieve the flag : 
+Decode 5ff9d0165b4f92b14994e5c685cdce28, put the result in lowercase, encrypt it in SHA-256 and you'll get your flag. 
+
+VERIFIER LES DOUBLON ET MIEUX ORGANISER TOUT CA 
+
+------------>>>>>>
+
+Risks:
+* Sensitive informations data breaches such as logins, passwords, bank informations, etc.
+* Attackers can also inject informations to bypass authentication pages to read and write files directly into the server such as backdoors, viruses, etc.
+
+How to avoid:
+* Use LIMIT eveywhere in the Database to limit the data display in case of attack
+* Use Parameterized Queries: Utilize prepared statements or parameterized queries with placeholders for user input. 
+This ensures that input values are not directly concatenated into the SQL query string.
+* Use proper escaping techniques or parameterized queries provided by your database or programming language. 
+Most languages and frameworks offer methods to escape special characters (like quotes and semicolons) that can be used in SQL injection attacks.
+
+<<<<<<------------
+
+Sources:
+https://owasp.org/Top10/fr/A03_2021-Injection/
+https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/
+https://www.sqlinjection.net/table-names/
+https://www.sqlinjection.net/column-names/

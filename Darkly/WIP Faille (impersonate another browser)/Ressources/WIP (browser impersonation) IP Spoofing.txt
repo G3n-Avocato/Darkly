@@ -43,7 +43,7 @@ Second looks at outgoing packets, checks source IP addresses that don't match wi
 
 * Using robust verification methods, even among networked computers, can prevent the development of a botnetwork in the case where a computer in a network is infected.
 
-* Migrate sites to IPv6, it makes Ip IP spoofing harder by including encryption and authentication steps. Hight proportion of the world's internet traffic still uses IPv4.
+* Migrate sites to IPv6, it makes Ip IP spoofing harder by including encryption and authentication steps. High proportion of the world's internet traffic still uses IPv4.
 
 Sources:
 https://owasp.org/www-community/pages/attacks/ip_spoofing_via_http_headers
