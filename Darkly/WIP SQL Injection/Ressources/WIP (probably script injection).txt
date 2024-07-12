@@ -1,3 +1,4 @@
+A03:2021 Injection CWE-89 SQL Injection,
 In-band SQLi:
 
     Error-based SQLi -> exploit error messages thrown by the database server to obtain information about the structure of the database.
