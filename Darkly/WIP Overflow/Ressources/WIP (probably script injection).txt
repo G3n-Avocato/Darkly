@@ -1,0 +1,12 @@
+How to find the flag:
+* Go to the survey page
+* Choose and inspect a survey grade field with the console <select name="valeur" onchange="javascript:this.form.submit();">
+-> Here we understand that the value is submitted to the form on change
+* Modify the html to cause an overflow of the grade input <option value="1">99999999999999999999999</option>
+-> Select the grade "1" and it's done!
+
+Risks:
+
+How to avoid:
+
+Sources:

@@ -36,7 +36,7 @@ Risks:
 * Attackers can also inject informations to bypass authentication pages to read and write files directly into the server such as backdoors, viruses, etc.
 
 How to avoid:
-* Use LIMIT eveywhere in the Database to limit the data display in case of attack
+* Use LIMIT eveywhere in the Database to limit the data display in case of a successful attack
 * Use Parameterized Queries: Utilize prepared statements or parameterized queries with placeholders for user input. 
 This ensures that input values are not directly concatenated into the SQL query string.
 * Use proper escaping techniques or parameterized queries provided by your database or programming language. 
