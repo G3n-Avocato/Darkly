@@ -1,5 +1,11 @@
+In-band SQLi:
+
+    Error-based SQLi -> exploit error messages thrown by the database server to obtain information about the structure of the database.
+    Union-based SQLi -> exploit the UNION SQL operator to combine the result of two or more SELECT statements into a single result.
+
 How to find the flag:
-* Go to the member page
+
+* Go to the "Members" page
 * Do a regular text query and understand that it returns SQL MariaDB errors
 
 Enter the following commands:
@@ -27,20 +33,32 @@ Enter the following commands:
 -> In the Commentaire field we find an explanation of how to retrieve the flag : 
 Decode 5ff9d0165b4f92b14994e5c685cdce28, put the result in lowercase, encrypt it in SHA-256 and you'll get your flag. 
 
-VERIFIER LES DOUBLON ET MIEUX ORGANISER TOUT CA 
-
 ------------>>>>>>
 
 Risks:
+
 * Sensitive informations data breaches such as logins, passwords, bank informations, etc.
-* Attackers can also inject informations to bypass authentication pages to read and write files directly into the server such as backdoors, viruses, etc.
+* Then Attackers can impersonate users or impersonate database administrator and obtain all database privileges.
+* Select and output all the database from databse server.
+* They can alter data in database and add new database for example in a financial app : alter balance, transaction, transfer money.
+* They can delete records from database, even if the admin makes database backups, this could affect application availability until the database is restored. 
+
+* Attackers can also inject informations to bypass authentication pages to read and write files directly into the server such as backdoors, viruses.
+In some database servers we can access to the operating system from database server.
 
 How to avoid:
-* Use LIMIT eveywhere in the Database to limit the data display in case of a successful attack
-* Use Parameterized Queries: Utilize prepared statements or parameterized queries with placeholders for user input. 
-This ensures that input values are not directly concatenated into the SQL query string.
-* Use proper escaping techniques or parameterized queries provided by your database or programming language. 
-Most languages and frameworks offer methods to escape special characters (like quotes and semicolons) that can be used in SQL injection attacks.
+
+* Use Parameterized Queries:
+    - Don't trust any user input. Utilize prepared statements or parameterized queries with placeholders for user input. 
+    This ensures that input values are not directly concatenated into the SQL query string and avoid SQL injection.
+    - All input must be sanitize, to remove potential malicious code element such as special characters like single quotes. They're used in SQLi attacks.
+    Most languages and frameworks offer methods to escape special characters.
+
+* Turn off the visibility of database errors on your production sites, they can be used to gain information about your database.
+
+* Use LIMIT eveywhere in the Database to limit the data display in case of attack
+
+* Use SQLi detectiuon tools each time app is update, in the event the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability was fixed.
 
 <<<<<<------------
 
@@ -49,3 +67,4 @@ https://owasp.org/Top10/fr/A03_2021-Injection/
 https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/
 https://www.sqlinjection.net/table-names/
 https://www.sqlinjection.net/column-names/
+https://www.acunetix.com/websitesecurity/sql-injection/
