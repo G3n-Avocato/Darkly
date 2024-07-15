@@ -2,7 +2,7 @@
 
 ## Breach type:
 * A05:2021 Security Misconfiguration 
-    * CWE-16 Configuration, feature that doesn't work installed: `page=recover` for recover password.
+    * CWE-16 Configuration (feature that doesn't work installed: `page=recover` for recover password.)
 * A01:2021 Broken Access Control
     * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
