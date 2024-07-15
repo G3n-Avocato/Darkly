@@ -5,7 +5,7 @@
     * CWE-315 : Cleartext Storage of Sensitive Information in a Cookie
 
 ## How to find the flag:
-* Open you browser and type `"Inspect" -> "Applications"`
+* Open you browser and type `Inspect" -> "Applications`
 * Go to the `Cookie` tab
 * Copy-paste the value of the cookie and decode it with MD5 decryption (ex: https://dcode.fr)
 * Discover that it is set to `false`
