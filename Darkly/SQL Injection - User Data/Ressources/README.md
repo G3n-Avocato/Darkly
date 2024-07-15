@@ -30,7 +30,7 @@ Enter the following commands:
     * We now have a list of all the columns of the 'users' table
 
 * `105 OR 1=1 UNION SELECT countersign, 1 FROM users`
-    * In the countersign field of our "GetThe Flag" user we find a hashed code in MD5 : 5ff9d0165b4f92b14994e5c685cdce28. 
+    * In the countersign field corresponding to the "GetThe Flag" user we find a hashed code in MD5 : 5ff9d0165b4f92b14994e5c685cdce28. 
     * When we decode it we find "FortyTwo".
     * We can't do anything with it yet.
 
@@ -53,7 +53,7 @@ Enter the following commands:
     * Don't trust any user input. Utilize prepared statements or parameterized queries with placeholders for user input. 
     This ensures that input values are not directly concatenated into the SQL query string and avoid SQL injection.
     * All input must be sanitize, to remove potential malicious code element such as special characters like single quotes. They're used in SQLi attacks.
-    Most languages and frameworks offer methods to escape special characters.
+    * Most languages and frameworks offer methods to escape special characters.
 
 * Turn off the visibility of database errors on your production sites, they can be used to gain information about your database.
 
