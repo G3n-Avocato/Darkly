@@ -1,6 +1,6 @@
 # SQL Injection - User Data
 
-## Breach type"
+## Breach type:
 * A03:2021 Injection 
     * CWE-89 SQL Injection (In-band SQLi):
         * Error-based SQLi: exploit error messages thrown by the database server to obtain information about the structure of the database.
@@ -57,11 +57,9 @@ Enter the following commands:
 
 * Turn off the visibility of database errors on your production sites, they can be used to gain information about your database.
 
-* Use LIMIT eveywhere in the Database to limit the data display in case of attack
+* Use `LIMIT` eveywhere in the Database to limit the data display in case of attack
 
-* Use SQLi detectiuon tools each time app is update, in the event the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability was fixed.
-
-<<<<<<------------
+* Use SQLi detection tools each time app is update, in the event the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability was fixed.
 
 ## Sources:
 * https://owasp.org/Top10/fr/A03_2021-Injection/
