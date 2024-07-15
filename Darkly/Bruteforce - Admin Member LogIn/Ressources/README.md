@@ -38,8 +38,8 @@ We then check if the word `flag` is present in the response of the reconstructed
 `full_url = f"{BASE_URL}&username={USERNAME}&password={password}&Login=Login#"`
 
 * We can now go to the Signin page and log in with :
-    * Username : admin
-    * Password : shadow
+    * Username : `admin`
+    * Password : `shadow`
 
 ## Risks:
 
