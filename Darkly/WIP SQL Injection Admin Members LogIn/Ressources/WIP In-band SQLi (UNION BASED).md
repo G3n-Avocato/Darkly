@@ -31,7 +31,7 @@ We then check if the word "flag" is present in the response of the reconstructed
 `full_url = f"{BASE_URL}&username={USERNAME}&password={password}&Login=Login#"`
 
 * We can now go to the Signin page and log in with :
-Username : admin
+>Username : admin
 Password : shadow
 
 Risks:
@@ -39,8 +39,6 @@ Risks:
 
 How to avoid:
 
-
-<<<<<<------------
 
 Sources:
 https://owasp.org/Top10/fr/A03_2021-Injection/
