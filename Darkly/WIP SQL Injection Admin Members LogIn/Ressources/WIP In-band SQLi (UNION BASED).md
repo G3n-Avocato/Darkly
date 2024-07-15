@@ -41,8 +41,8 @@ We then check if the word "flag" is present in the response of the reconstructed
 
 
 Sources:
-https://owasp.org/Top10/fr/A03_2021-Injection/
-https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/
-https://www.sqlinjection.net/table-names/
-https://www.sqlinjection.net/column-names/
-https://www.acunetix.com/websitesecurity/sql-injection/
+* https://owasp.org/Top10/fr/A03_2021-Injection/
+* https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/
+* https://www.sqlinjection.net/table-names/
+* https://www.sqlinjection.net/column-names/
+* https://www.acunetix.com/websitesecurity/sql-injection/
