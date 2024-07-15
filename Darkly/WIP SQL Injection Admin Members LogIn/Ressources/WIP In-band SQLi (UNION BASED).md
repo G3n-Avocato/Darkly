@@ -21,9 +21,16 @@ How to find the flag:
 -> We don't know if it is for admin or root yet, so we'll try both.
 
 * But first we need to decode it. There's 32 characters so it is probably hashed in MD5.
--> The password is "shadow"
+-> It is ! The password is "shadow"
 
-* Go to the Signin page and log in with :
+However, as the password is stored in Member_Brute_Force we suspect that we need to specificly use a brute force method to retrieve it.
+In order to do this we wrote a short script in Python using a dictionnary of most common used passwords as a source. 
+
+We then check if the word "flag" is present in the response of the reconstructed URL.
+
+'full_url = f"{BASE_URL}&username={USERNAME}&password={password}&Login=Login#"'
+
+* We can now go to the Signin page and log in with :
 Username : admin
 Password : shadow
 
