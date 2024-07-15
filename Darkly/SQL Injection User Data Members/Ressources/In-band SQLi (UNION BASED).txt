@@ -4,6 +4,8 @@ In-band SQLi:
     Error-based SQLi -> exploit error messages thrown by the database server to obtain information about the structure of the database.
     Union-based SQLi -> exploit the UNION SQL operator to combine the result of two or more SELECT statements into a single result.
 
+a01
+
 How to find the flag:
 
 * Go to the "Members" page
