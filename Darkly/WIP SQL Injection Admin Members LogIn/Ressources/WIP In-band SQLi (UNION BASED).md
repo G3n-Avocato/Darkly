@@ -1,6 +1,6 @@
-###a01 + a05
+### a01 + a05
 
-#How to find the flag:
+# How to find the flag:
 * Display all the tables of the databases with : 105 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.columns
 
 * Discover a table named "db_default" which contains three columns : id, username, password
@@ -34,10 +34,10 @@ We then check if the word "flag" is present in the response of the reconstructed
 - Username : admin
 - Password : shadow
 
-#Risks:
+# Risks:
 
 
-#How to avoid:
+# How to avoid:
 
 
 Sources:
