@@ -8,9 +8,7 @@ IP spoofing allows you to pose as a reliable source to another machine, site, se
 * Launch the inspector on the homepage
 * Click on the href link hidden in the footer : `<a href="?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f"><li>&copy; BornToSec</li></a>`
 * Discover a hidden page with informations about the Albatros and an image and a hidden text in the `<div class="container">` saying : 
-    `You must come from : "https://www.nsa.gov/"."
-    [...]
-    "Let's use this browser : "ft_bornToSec". It will help you a lot !`
+    `You must come from : "https://www.nsa.gov/"." (...) "Let's use this browser : "ft_bornToSec". It will help you a lot !`
 
 * Use curl to impersonate the browser ft_bornToSec coming from https://www.nsa.gov: 
 
@@ -32,7 +30,7 @@ IP spoofing allows you to pose as a reliable source to another machine, site, se
 
 ## How to avoid:
 
-It's necessary to use these methods together in order to be truly protected against it.
+It's necessary to use these methods together in order to be truly protected against it:
 
 * Detect IP spoofing/Deploying packet filtering:
     * It's difficult to detect IP spoofing because this doesn'leave external sign. But we can use network monitoring tools to analyze traffic at endpoints.
@@ -43,7 +41,7 @@ It's necessary to use these methods together in order to be truly protected agai
 
 * Use Packet Filtering with firewalls and IDS : 
     * The firewall is used to filter traffic, blocking access from unauthorized sources and spoofed IP addresses. Firewalls can inspect IP packet headers to ensure they are legitimate.
-The IDS is designed to detect and alert on potential malicious activities or policy violations within a network. It does not block traffic but monitors and analyzes it for suspicious behavior.
+    * The IDS is designed to detect and alert on potential malicious activities or policy violations within a network. It does not block traffic but monitors and analyzes it for suspicious behavior.
 
 * Using robust verification methods, even among networked computers, can prevent the development of a botnetwork in the case where a computer in a network is infected.
 
