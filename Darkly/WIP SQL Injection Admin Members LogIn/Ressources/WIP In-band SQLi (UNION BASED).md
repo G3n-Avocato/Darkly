@@ -28,10 +28,10 @@ In order to do this we wrote a short script in Python using a dictionnary of mos
 
 We then check if the word "flag" is present in the response of the reconstructed URL.
 
-`full_url = f"{BASE_URL}&username={USERNAME}&password={password}&Login=Login#"`
+```full_url = f"{BASE_URL}&username={USERNAME}&password={password}&Login=Login#"```
 
 * We can now go to the Signin page and log in with :
->Username : admin
+Username : admin
 Password : shadow
 
 Risks:
