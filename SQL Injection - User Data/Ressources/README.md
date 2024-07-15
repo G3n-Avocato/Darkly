@@ -41,7 +41,6 @@ Enter the following commands:
 
 * Sensitive informations data breaches such as logins, passwords, bank informations, etc.
 * Then Attackers can impersonate users or impersonate database administrator and obtain all database privileges.
-* Select and output all the database from databse server.
 * They can alter data in database and add new database for example in a financial app : alter balance, transaction, transfer money.
 * They can delete records from database, even if the admin makes database backups, this could affect application availability until the database is restored. 
 * Attackers can also inject informations to bypass authentication pages to read and write files directly into the server such as backdoors, viruses.
