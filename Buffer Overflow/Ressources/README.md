@@ -1,10 +1,10 @@
 # Buffer overflow
 
+* Buffer overflow is considered a critical security vulnerability. It occurs when a program attempts to put more data in a buffer than it can hold. 
+* Writing outside the bounds of an allocated memory block can corrupt data, crash the program, or execute malicious code.
 
 ## Breach type:
-* CWE 788 Access of Memory Location After End of Buffer.
-    * Buffer overflow is considered a critical security vulnerability. It occurs when a program attempts to put more data in a buffer than it can hold. 
-    * Writing outside the bounds of an allocated memory block can corrupt data, crash the program, or execute malicious code.
+* CWE-788 Access of Memory Location After End of Buffer.
 
 ## How to find the flag:
 
