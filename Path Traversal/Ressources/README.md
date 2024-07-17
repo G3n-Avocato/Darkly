@@ -23,3 +23,4 @@ Every time a ressource or file is included by the application, there is a risk t
 * https://book.hacktricks.xyz/pentesting-web/file-inclusion
 * https://owasp.org/www-community/attacks/Path_Traversal
 * https://github.com/JahTheTrueGod/Directory-Traversal-Cheat-Sheet
+* https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include.md
