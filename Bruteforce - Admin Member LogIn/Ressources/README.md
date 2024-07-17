@@ -1,6 +1,6 @@
 # Bruteforce - Admin Member LogIn
 
-## Breach type:
+## Breach type
 * A05:2021 Security Misconfiguration 
     * CWE-16 Configuration (feature that doesn't work installed: `page=recover` for recover password.)
 * A01:2021 Broken Access Control
@@ -12,7 +12,7 @@ On the specific case of weak password:
 * CWE-326: Inadequate Encryption Strength		
 * CWE-521: Weak Password Requirements
 
-## How to find the flag:
+## How to find the flag
 * Display all the tables of the databases with : `105 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.columns`
 
 * Discover a table named `db_default` which contains three columns : `id, username, password`
@@ -45,13 +45,13 @@ We can now go to the Signin page and log in with :
 * Username : `admin`
 * Password : `shadow`
 
-## Risks:
+## Risks
 * Poor password practices, such as using easily guessable passwords like "Password" or "123456", increase the risk of data breaches, identity theft, and business disruption :
     * Attackers exploit unchanged default settings or stolen passwords to gain unauthorized access, leading to data breaches and compromising critical systems.
     * Ineffective password management can lead to financial losses for mid-size businesses through incidents like phishing attacks and malware/ransomware.
     * Legal implications of poor password controls include regulatory non-compliance fines and potential legal costs from data breaches due to inadequate security measures.
 
-## How to avoid:
+## How to avoid
 * Use strong, complex passwords that are unique for each account.
 * Limit login attempts with account lockout mechanisms.
 * Monitor and restrict login attempts from suspicious IP addresses.
@@ -61,7 +61,7 @@ We can now go to the Signin page and log in with :
 * Disable root SSH logins to prevent direct brute force attacks.
 * Deploy Web Application Firewalls (WAFs) to block malicious traffic and enforce security policies.
 
-## Sources:
+## Sources
 * https://cwe.mitre.org/data/definitions/521.html
 * https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
 * https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy

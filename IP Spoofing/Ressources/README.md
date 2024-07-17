@@ -1,9 +1,13 @@
 # IP Spoofing
 
-## Breach type:
 IP spoofing allows you to pose as a reliable source to another machine, site, server, network.
 
-## How to find the flag:
+## Breach type
+
+CWE-212: Improper Cross-Boundary Removal of Sensitive Information:
+    * CWE-212 specifically addresses vulnerabilities where an attacker gains unauthorized access or privileges by presenting misleading information across security boundaries. This can include IP spoofing, where the attacker manipulates IP packets to appear as if they originate from a trusted source.
+
+## How to find the flag
 
 * Launch the inspector on the homepage
 * Click on the href link hidden in the footer : `<a href="?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f"><li>&copy; BornToSec</li></a>`
@@ -22,13 +26,13 @@ IP spoofing allows you to pose as a reliable source to another machine, site, se
 
     `-L`: This option instructs CURL to follow redirects automatically. If the server responds with a status code indicating a redirection (e.g., 301 or 302), cURL will follow the redirection and request the new URL.
 
-## Risks:
+## Risks
 * DDOS attacks using many different IPs, to overwhelm computer servers with packets of data, it slows down or crash a website/network.
 * IP spoofing allows you to hide the infiltration of a network by botnets.
 * Can allows you to bypass authentication, access user sessions, access sensitive or private data, allows unauthorized execution of code or commands.
 * Man in the middle attacks
 
-## How to avoid:
+## How to avoid
 
 It's necessary to use these methods together in order to be truly protected against it:
 
@@ -47,7 +51,7 @@ It's necessary to use these methods together in order to be truly protected agai
 
 * Migrate sites to IPv6, it makes Ip IP spoofing harder by including encryption and authentication steps. High proportion of the world's internet traffic still uses IPv4.
 
-## Sources:
+## Sources
 * https://owasp.org/www-community/pages/attacks/ip_spoofing_via_http_headers
 * https://www.baeldung.com/linux/curl-test-ip-spoofing
 * https://en.wikipedia.org/wiki/IP_address_spoofing#:~:text=In%20computer%20networking%2C%20IP%20address,of%20impersonating%20another%20computing%20system

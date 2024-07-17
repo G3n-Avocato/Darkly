@@ -1,6 +1,6 @@
 # SQL Injection - Member Search Image
 
-## Breach type:
+## Breach type
 * A03:2021 Injection 
     * CWE-89 SQL Injection (In-band SQLi):
         * Error-based SQLi: exploit error messages thrown by the database server to obtain information about the structure of the database.
@@ -8,7 +8,7 @@
 * A01:2021 Broken Access Control
     * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
-## How to find the flag:
+## How to find the flag
 
 * Go to the `SEARCH IMAGE` button at the end of the page, url = `?page=searchimg`
 
@@ -33,7 +33,7 @@ Enter the following commands:
     * In the comment field corresponding to the "Hack me ?" image we find a hashed code in MD5 : 1928e8083cf461a51303633093573c46. With it we find an explanation of how to retrieve the flag : `If you read this just use this md5 decode lowercase then sha256 to win this flag ! : 1928e8083cf461a51303633093573c46`
     * When we decode MD5 we find "albatroz".
 
-## Risks:
+## Risks
 
 * Sensitive informations data breaches such as logins, passwords, bank informations, etc.
 * Then Attackers can impersonate users or impersonate database administrator and obtain all database privileges.
@@ -42,7 +42,7 @@ Enter the following commands:
 * Attackers can also inject informations to bypass authentication pages to read and write files directly into the server such as backdoors, viruses.
 * In some database servers we can access to the operating system from database server.
 
-## How to avoid:
+## How to avoid
 
 * Use Parameterized Queries:
     * Don't trust any user input. Utilize prepared statements or parameterized queries with placeholders for user input. 
@@ -56,7 +56,7 @@ Enter the following commands:
 
 * Use SQLi detection tools each time app is update, in the event the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability was fixed.
 
-## Sources:
+## Sources
 * https://owasp.org/Top10/fr/A03_2021-Injection/
 * https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/
 * https://www.sqlinjection.net/table-names/

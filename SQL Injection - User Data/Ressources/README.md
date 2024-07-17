@@ -1,6 +1,6 @@
 # SQL Injection - User Data
 
-## Breach type:
+## Breach type
 * A03:2021 Injection 
     * CWE-89 SQL Injection (In-band SQLi):
         * Error-based SQLi: exploit error messages thrown by the database server to obtain information about the structure of the database.
@@ -8,7 +8,7 @@
 * A01:2021 Broken Access Control
     * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
-## How to find the flag:
+## How to find the flag
 
 * Go to the `Members` page
 * Do a regular text query and understand that it returns SQL MariaDB errors
@@ -37,7 +37,7 @@ Enter the following commands:
 * `105 OR 1=1 UNION SELECT Commentaire, 1 FROM users`
     * In the Commentaire field we find an explanation of how to retrieve the flag : decode `5ff9d0165b4f92b14994e5c685cdce28`, put the result in lowercase, encrypt it in SHA-256 and you'll get your flag. 
 
-## Risks:
+## Risks
 
 * Sensitive informations data breaches such as logins, passwords, bank informations, etc.
 * Then Attackers can impersonate users or impersonate database administrator and obtain all database privileges.
@@ -46,7 +46,7 @@ Enter the following commands:
 * Attackers can also inject informations to bypass authentication pages to read and write files directly into the server such as backdoors, viruses.
 * In some database servers we can access to the operating system from database server.
 
-## How to avoid:
+## How to avoid
 
 * Use Parameterized Queries:
     * Don't trust any user input. Utilize prepared statements or parameterized queries with placeholders for user input. 
@@ -60,7 +60,7 @@ Enter the following commands:
 
 * Use SQLi detection tools each time app is update, in the event the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability was fixed.
 
-## Sources:
+## Sources
 * https://owasp.org/Top10/fr/A03_2021-Injection/
 * https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/
 * https://www.sqlinjection.net/table-names/

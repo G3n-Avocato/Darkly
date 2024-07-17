@@ -2,14 +2,14 @@
 
 This vulnerability is related to password recovery mechanisms that are insecure or poorly implemented, allowing an attacker to access accounts without knowing the original password.
 
-## Breach type:
+## Breach type
 
 * A07:2021 Identification and Authentication Failures
     * CWE-640 Weak Password Recovery Mechanism for Forgotten Password.
 * A05:2021 Security Misconfiguration 
     * CWE-16 Configuration (the feature doesn't work properly: page=recover for recover password.)
 
-## How to find the flag:
+## How to find the flag
 
 * Go to the sign in page
 * Click on `forgot password` link
@@ -17,7 +17,7 @@ This vulnerability is related to password recovery mechanisms that are insecure 
 * Edit the html to display the field containing the webmaster email
 * Send the password recovery demand to the email of your choice
 
-## Risks:
+## Risks
 
 * Incorrect implementation permitting viewing or editing someone else's account, by providing its unique identifier.
 * An attacker can enumerating which accounts exist, and increases the risk of targeted attacks
@@ -25,7 +25,7 @@ This vulnerability is related to password recovery mechanisms that are insecure 
 * Interception of communications, if the password reset link is sent via email or other unsecured means of communication, there is a risk that this email could be intercepted by an attacker, allowing them to access the account
 * Phishing, attackers can exploit password reset mechanisms to send fraudulent emails containing fake reset links, aiming to trick users into disclosing their account information
 
-## How to avoid:
+## How to avoid
 
 * Use good security practices for the reset identifiers:
     * Ensure that the time taken for the user response message is uniform
@@ -41,7 +41,7 @@ This vulnerability is related to password recovery mechanisms that are insecure 
 * Use a better security architecture
 
 
-Sources:
+Sources
 * https://cwe.mitre.org/data/definitions/640.html
 * https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
 * https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html

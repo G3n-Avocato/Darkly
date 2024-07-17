@@ -1,13 +1,13 @@
 # Upload - Improper file type handling
 
-## Breach type:
+## Breach type
 
 According to OWASP, improper file type handling is a common vulnerability and could fall under the following categories:
 
 * OWASP Top 10 2017: A5 - Security Misconfiguration (Unvalidated Redirects and Forwards).
 * OWASP Top 10 2021: A8 - Security of APIs and Services (Injection).
 
-## How to find the flag:
+## How to find the flag
 
 * Go to the image upload page : `http://192.168.56.101/index.php?page=upload`
 
@@ -29,12 +29,12 @@ Now that we know that we just have to change the content type of the file to byp
 * `-F "uploaded=@./coucou.php;type=image/jpeg"` This specifies the file to be uploaded and falsely sets its MIME type to `image/jpeg`, indicating it is an image.
 * `-F "Upload=Upload" | grep flag` This adds a form field named Upload with a value of Upload accordingly to the form present on the website to trigger the upload action and grep the flag in the http response
 
-## Risks:
+## Risks
 
 * If the server accepts and processes the uploaded file `coucou.php` as an image `image/jpeg`, it enables an attacker to execute malicious code on the server.
 * Remote Code Execution (RCE) allows attackers to run arbitrary commands on the server. They can steal sensitive data, modify files, or exploit other vulnerabilities to escalate privileges.
 
-## How to avoid:
+## How to avoid
 
 * File format limitation: Limit allowed file types to only those necessary for the application.
 * Strong protection: Do not rely only on the MIME type nor the file extension to validate the uploaded file, as it can be easily bypassed.
@@ -42,7 +42,7 @@ Now that we know that we just have to change the content type of the file to byp
 * Execute Permission Control: Ensure that directories used for storing uploaded files do not have execute permissions, preventing any script execution from those directories.
 * Sanitize Filenames: Remove all special, control, and Unicode characters from filenames and ensure filenames comply with strict regular expressions to prevent path traversal and injection attacks.
 
-## Sources:
+## Sources
 * https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
 * https://chocapikk.com/posts/2023/faille_upload/
 * https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types
