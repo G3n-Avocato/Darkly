@@ -10,7 +10,7 @@
 
 ## How to find the flag:
 
-* Go to the "Members" page
+* Go to the `Members` page
 * Do a regular text query and understand that it returns SQL MariaDB errors
 
 Enter the following commands:
