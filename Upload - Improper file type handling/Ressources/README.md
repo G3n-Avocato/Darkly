@@ -13,7 +13,7 @@ According to OWASP, improper file type handling is a common vulnerability and co
 
 The goal is to upload a malicious .php script via the image upload form.
 
-First method :
+First method:
 * Create a `coucou.php` file in your working directory.
 * On Firefox, upload the script `coucou.php` in the form. You'll get an error prompt saying `Your image was not uploaded.`.
 * Press `F12`, click on the Network tab, click on `Reload` to resend the file. 
@@ -21,7 +21,7 @@ First method :
 * In the body field, change the content type to `image/jpg` (instead of  `application/x-php`) then click on the `Send` at the bottom of the page
 * Click on the `Response` tab, wait a few seconds and you'll get your flag !
 
-Second method :
+Second method:
 
 Now that we know that we just have to change the content type of the file to bypass the form security, we'll try a more scalable method using the terminal and Curl. Enter this command in your terminal: `curl 'http://192.168.56.101/index.php?page=upload#' -X POST -F "uploaded=@./coucou.php;type=image/jpeg" -F "Upload=Upload" | grep flag`
 
