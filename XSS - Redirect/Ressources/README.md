@@ -1,4 +1,4 @@
-# XSS (Cross-site Scripting) Feedback page
+# XSS (Cross-site Scripting) Redirect social network
 
 ## Breach type:
 

@@ -5,7 +5,7 @@
 CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
 
 ## How to find the flag:
-
+* Use this URL : http://192.168.56.101/index.php?page=../../../../../../../../etc/passwd
 
 ## Risks:
 
