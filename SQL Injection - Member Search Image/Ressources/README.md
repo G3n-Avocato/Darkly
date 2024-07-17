@@ -10,7 +10,7 @@
 
 ## How to find the flag:
 
-* Go to the "SEARCH IMAGE" button at the end of the page, url = `?page=searchimg`
+* Go to the `SEARCH IMAGE` button at the end of the page, url = `?page=searchimg`
 
 Enter the following commands:
 

@@ -20,7 +20,6 @@ XSS is a code injection vulnerability like SQL injections, in which malicious sc
 
 ## Risks:
 * Data Theft: XSS attacks can be used to steal sensitive information, such as cookies, session tokens, and other private data, allowing attackers to impersonate users and gain unauthorized access to accounts.
-* Session Hijacking: By stealing session cookies, attackers can take over a user’s active session, effectively logging in as the user and accessing their personal data or performing actions on their behalf.
 * Malware Distribution: Attackers can use XSS to inject malicious scripts that can download and install malware on the victim’s device, compromising their system and data.
 * Defacement: XSS can be used to modify the content of a website, leading to misinformation, reputation damage, and loss of user trust. This is particularly damaging for websites that rely on user-generated content.
 * Phishing Attacks: XSS can be exploited to create fake login forms or other misleading interfaces, tricking users into providing their credentials or other sensitive information directly to the attacker.
@@ -34,5 +33,5 @@ XSS is a code injection vulnerability like SQL injections, in which malicious sc
 
 ## Sources:
 * https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/
-* https://owasp.org/www-community/attacks/xss/#:~:text=XSS%20attacks%20can%20generally%20be,that%20is%20discussed%20separately%20here.
+* https://en.wikipedia.org/wiki/Cross-site_scripting
 * https://owasp.org/www-community/Types_of_Cross-Site_Scripting
