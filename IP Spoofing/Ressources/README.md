@@ -1,11 +1,12 @@
 # IP Spoofing
 
-IP spoofing allows you to pose as a reliable source to another machine, site, server, network.
+IP spoofing allows you to pose as a reliable source to another machine, site, server, network. By using tools that allow you to modify the sender's source address in IP packets. This action only occurs at the network level.
 
 ## Breach type
-
-CWE-212: Improper Cross-Boundary Removal of Sensitive Information:
-    * CWE-212 specifically addresses vulnerabilities where an attacker gains unauthorized access or privileges by presenting misleading information across security boundaries. This can include IP spoofing, where the attacker manipulates IP packets to appear as if they originate from a trusted source.
+* A07:2021 – Identification and Authentication Failures
+    * CWE-290: Authentication Bypass by Spoofing
+    * CWE-291: Reliance on IP Address for Authentication
+    * CWE-348: Use of Less Trusted Source
 
 ## How to find the flag
 
@@ -56,3 +57,4 @@ It's necessary to use these methods together in order to be truly protected agai
 * https://www.baeldung.com/linux/curl-test-ip-spoofing
 * https://en.wikipedia.org/wiki/IP_address_spoofing#:~:text=In%20computer%20networking%2C%20IP%20address,of%20impersonating%20another%20computing%20system
 * https://usa.kaspersky.com/resource-center/threats/ip-spoofing
+* https://cwe.mitre.org/data/definitions/290.html
