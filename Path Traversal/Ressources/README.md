@@ -3,10 +3,10 @@
 A path traversal attack (directory traversal) aims to access files and directories that are stored outside the web root folder. By mainipulating variables that reference files with "dot-dot-slash (../)" sequences and its variations or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system.
 
 ## Breach type
-
-* CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
-* CWE-23: Relative Path Traversal
-* CWE-36: Absolute Path Traversal
+* A05:2021 - Security Misconfiguration
+    * CWE-22: Improper Limitation of a Pathname to a Restricted Directory('Path Traversal')
+    * CWE-23: Relative Path Traversal
+    * CWE-36: Absolute Path Traversal
 
 ## How to find the flag
 
@@ -38,3 +38,4 @@ Every time a ressource or file is included by the application, there is a risk t
 * https://book.hacktricks.xyz/pentesting-web/file-inclusion
 * https://owasp.org/www-community/attacks/Path_Traversal
 * https://github.com/JahTheTrueGod/Directory-Traversal-Cheat-Sheet
+* https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
