@@ -1,8 +1,13 @@
 # XSS (Cross-site Scripting) Redirect social network
 
+-- a revoir, est ce que la mauvaise gestion des redirections sur un site web est du xss,  a discuter
+
+Unvalidated redirects and forwards are possible when a web application accepts untrusted input that could cause the web application to redirect the request to a URL contained within untrusted input.
+
 ## Breach type
-A7: Cross-Site Scripting (XSS)". This category highlights the prevalence and risk associated with XSS vulnerabilities in web applications.
-* CWE-601: URL Redirection to Untrusted Site ('Open Redirect'). It refers to the security weakness where an application redirects users to a location specified by an attacker-controlled URL. 
+
+* A01:2021 - Broken Access Control
+    * CWE-601: URL Redirection to Untrusted Site (Open Redirect).  It refers to the security weakness where an application redirects users to a location specified by an attacker-controlled URL. 
 
 ## How to find the flag
 * Go to the homepage `http://192.168.56.101/index.php`
