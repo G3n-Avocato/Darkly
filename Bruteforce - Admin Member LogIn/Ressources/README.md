@@ -1,6 +1,8 @@
 # Bruteforce - Admin Member LogIn
 
-A brute force attack consists in an attacker configuring predetermined values, making requests to a server using those values, and then analyzing the response. They are often used for attacking authentication and discovering hidden content/pages within a web application. To authentication, brute force attacks are used when an account lockout policy is not in place.
+A brute force attack consists in an attacker configuring predetermined values, making requests to a server using those values, and then analyzing the response.  
+They are often used for attacking authentication and discovering hidden content/pages within a web application.  
+To authentication, brute force attacks are used when an account lockout policy is not in place.
 
 ## Breach type
 Brute Force :
@@ -18,7 +20,7 @@ SQL Injection :
     * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
 ## How to find the flag
-* There are two way : 
+* There are two way :   
 SQL Injection :
 
 * Go to the `Members` page
