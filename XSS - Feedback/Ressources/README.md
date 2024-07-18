@@ -1,16 +1,18 @@
 # XSS (Cross-site Scripting) Feadback page
 
-## Breach type
-
-A7: Cross-Site Scripting (XSS)". This category highlights the prevalence and risk associated with XSS vulnerabilities in web applications.
-* CWE-79 (Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')). CWE-79 specifically addresses the improper handling of user-supplied input within web pages, leading to XSS vulnerabilities.
-
 XSS is a code injection vulnerability like SQL injections, in which malicious scripts are injected into websites, generally in the form of a browser-side script, to a different end user.
 
 * There are three primary types of XSS: Stored XSS, Reflected XSS, and DOM-Based XSS.
     * Stored XSS (Persistent or Type II): The malicious script is permanently stored on the target server, such as in a database, comment field, or forum post. The script is executed whenever the stored data is retrieved and viewed by users.
     * Reflected XSS (Non-persistent or Type I): The malicious script is reflected off a web server, typically via a URL or form submission. The script is executed immediately and returned to the user as part of the response.
     * DOM-Based XSS: The vulnerability exists in the client-side code rather than the server-side. The malicious script is executed as a result of modifying the DOM environment in the victim's browser, typically using client-side JavaScript.
+
+## Breach type
+
+* A03:2021 - Injection
+    * CWE-79: Improper Neutralization of Input During Web Page Generation (Cross-site Scripting).  
+    The product does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+    * CWE-20: Improper Input Validation
 
 ## How to find the flag
 
@@ -19,6 +21,7 @@ XSS is a code injection vulnerability like SQL injections, in which malicious sc
 * You can also type a basic script in the message field, ie `<script>alert</script>`. The script will not execute itself but you'll get your flag !
 
 ## Risks
+
 * Data Theft: XSS attacks can be used to steal sensitive information, such as cookies, session tokens, and other private data, allowing attackers to impersonate users and gain unauthorized access to accounts.
 * Malware Distribution: Attackers can use XSS to inject malicious scripts that can download and install malware on the victim’s device, compromising their system and data.
 * Defacement: XSS can be used to modify the content of a website, leading to misinformation, reputation damage, and loss of user trust. This is particularly damaging for websites that rely on user-generated content.
@@ -35,3 +38,5 @@ XSS is a code injection vulnerability like SQL injections, in which malicious sc
 * https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/
 * https://en.wikipedia.org/wiki/Cross-site_scripting
 * https://owasp.org/www-community/Types_of_Cross-Site_Scripting
+* https://owasp.org/Top10/A03_2021-Injection/
+* https://cwe.mitre.org/data/definitions/79.html
