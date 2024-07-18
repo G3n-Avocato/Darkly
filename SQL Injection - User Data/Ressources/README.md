@@ -1,6 +1,9 @@
 # SQL Injection - User Data
 
+A SQL injection attack consists of insertion of a SQL query via the input data from the client to the application. By interfering with the requests that an application makes to it's database.
+
 ## Breach type
+
 * A03:2021 Injection 
     * CWE-89 SQL Injection (In-band SQLi):
         * Error-based SQLi: exploit error messages thrown by the database server to obtain information about the structure of the database.
