@@ -1,8 +1,12 @@
 # Upload - Improper file type handling
 
+The product allows the upload or transfer of dangerous file types that are automatically processed within its environment.
+
 ## Breach type
 
-According to OWASP, improper file type handling is a common vulnerability and could fall under the following categories:
+* A04:2021 - Insecure Design
+    * CWE-434: Unrestricted Upload of File with Dangerous Type
+    * CWE-351: Insufficient Type Distinction
 
 * OWASP Top 10 2017: A5 - Security Misconfiguration (Unvalidated Redirects and Forwards).
 * OWASP Top 10 2021: A8 - Security of APIs and Services (Injection).
@@ -46,3 +50,4 @@ Now that we know that we just have to change the content type of the file to byp
 * https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
 * https://chocapikk.com/posts/2023/faille_upload/
 * https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+* https://cwe.mitre.org/data/definitions/434.html
