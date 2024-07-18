@@ -1,4 +1,4 @@
-# Hidden field
+# Weak Password Recovery
 
 This vulnerability is related to password recovery mechanisms that are insecure or poorly implemented, allowing an attacker to access accounts without knowing the original password.
 
@@ -38,10 +38,9 @@ This vulnerability is related to password recovery mechanisms that are insecure 
         - Single use and expire after an appropriate time.
 * To avoid attacker enumerating which accounts exist, return a consistent message for both existent and non-existent accounts.
 * Remove or do not install unused features and frameworks.
-* Use a better security architecture
 
+## Sources
 
-Sources
 * https://cwe.mitre.org/data/definitions/640.html
 * https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
 * https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
