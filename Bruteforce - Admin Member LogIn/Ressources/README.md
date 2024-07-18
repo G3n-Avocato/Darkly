@@ -4,7 +4,7 @@ A brute force attack consists in an attacker configuring predetermined values, m
 
 ## Breach type
 
-* A07:2021 - Identification and Authentication Failures
+* * A07:2021 - Identification and Authentication Failures
     * CWE-521: Weak Password Requirements
 
 On the specific case of weak password:
@@ -12,13 +12,13 @@ On the specific case of weak password:
 * CWE-330: Use of Insufficiently Random Values		
 * CWE-326: Inadequate Encryption Strength
 
-* A03:2021 - Injection
-* A01:2021 Broken Access Control
+* * A03:2021 - Injection
+* * A01:2021 Broken Access Control
     * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
 ## How to find the flag
 * 2 options : 
-    * SQL injections :
+    * * SQL injections :
 
 * Go to the `Members` page
 
