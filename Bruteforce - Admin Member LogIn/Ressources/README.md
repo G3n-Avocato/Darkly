@@ -3,8 +3,8 @@
 A brute force attack consists in an attacker configuring predetermined values, making requests to a server using those values, and then analyzing the response. They are often used for attacking authentication and discovering hidden content/pages within a web application. To authentication, brute force attacks are used when an account lockout policy is not in place.
 
 ## Breach type
-
-* * A07:2021 - Identification and Authentication Failures
+Brute Force :
+* A07:2021 - Identification and Authentication Failures
     * CWE-521: Weak Password Requirements
 
 On the specific case of weak password:
@@ -12,13 +12,14 @@ On the specific case of weak password:
 * CWE-330: Use of Insufficiently Random Values		
 * CWE-326: Inadequate Encryption Strength
 
-* * A03:2021 - Injection
-* * A01:2021 Broken Access Control
+SQL Injection :
+* A03:2021 - Injection
+* A01:2021 Broken Access Control
     * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
 ## How to find the flag
-* 2 options : 
-    * * SQL injections :
+* There are two way : 
+SQL Injection :
 
 * Go to the `Members` page
 
@@ -45,7 +46,7 @@ It will return this error message : `Table 'Member_Sql_Injection.db_default' doe
     * There's 32 characters so it is probably hashed in MD5.
     * It is ! The password is `shadow`
 
-    * Brute Force Attack :
+Or Brute Force Attack :
 
 However, as the password is stored in Member_Brute_Force we suspect that we need to specificly use a brute force method to retrieve it.
 In order to do this we wrote a short script in Python using a dictionnary of most common used passwords as a source. 
