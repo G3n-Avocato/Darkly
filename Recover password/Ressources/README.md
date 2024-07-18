@@ -7,7 +7,7 @@ This vulnerability is related to password recovery mechanisms that are insecure 
 * A07:2021 Identification and Authentication Failures
     * CWE-640 Weak Password Recovery Mechanism for Forgotten Password.
 * A05:2021 Security Misconfiguration 
-    * CWE-16 Configuration (the feature doesn't work properly: page=recover for recover password.)
+    * CWE-16 Configuration (the feature doesn't work properly: `page=recover` for recover password.)
 
 ## How to find the flag
 
