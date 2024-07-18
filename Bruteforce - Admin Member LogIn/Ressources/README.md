@@ -20,7 +20,8 @@ SQL Injection :
     * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
 
 ## How to find the flag
-* There are two way :   
+* There are two way:   
+
 SQL Injection :
 
 * Go to the `Members` page

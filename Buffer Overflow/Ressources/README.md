@@ -1,10 +1,11 @@
 # Buffer overflow
 
-* Buffer overflow is considered a critical security vulnerability. It occurs when a program attempts to put more data in a buffer than it can hold. 
-* Writing outside the bounds of an allocated memory block can corrupt data, crash the program, or execute malicious code.
+Buffer overflow is considered a critical security vulnerability. It occurs when a program attempts to put more data in a buffer than it can hold.  
+Writing outside the bounds of an allocated memory block can corrupt data, crash the program, or execute malicious code.
 
 ## Breach type
 * CWE-788 Access of Memory Location After End of Buffer.
+* CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffe
 
 ## How to find the flag
 
@@ -25,7 +26,11 @@ This knowledge can be used for futher attacks with more consequences.
 
 * Validate and clean up all users input before using it in code.
 * Use libraries, frameworks or languages that automatically manage certain overflow protections.
-* Environment Hardening, Run or Compil the software using features or extensions that randomly arrange the positions of a program's executable and librairies in memory.
+* Rules for memory allocation:
+    * check buffer size for memory allocation
+    * check case sensitive and memory overflow functions like strncpy()
+    * check if the buffer is in a loop, double check for danger of writing past the allocated space
+    * if necessary truncate all input strings
 * Perform security tests regularly to identify and correct potential vulnerabilities with updates.
 
 ## Sources
