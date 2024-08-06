@@ -20,5 +20,5 @@ with open(PASSWORD_FILE, "r") as file:
         print(password)
         check_flag(password)
 
-print(f"Noo valid password in this file: {PASSWORD_FILE}.")
+print(f"No valid password in this file: {PASSWORD_FILE}.")
 
