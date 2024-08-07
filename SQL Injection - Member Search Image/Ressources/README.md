@@ -5,11 +5,11 @@ A SQL injection attack consists of insertion of a SQL query via the input data f
 ## Breach type
 
 * A03:2021 Injection 
-    * CWE-89 SQL Injection (In-band SQLi):
+    * CWE-89: SQL Injection (In-band SQLi):
         * Error-based SQLi: exploit error messages thrown by the database server to obtain information about the structure of the database.
         * Union-based SQLi: exploit the UNION SQL operator to combine the result of two or more SELECT statements into a single result.
 * A01:2021 Broken Access Control
-    * CWE-200 Exposure of Sensitive Information to an Unauthorized Actor.
+    * CWE-200: Exposure of Sensitive Information to an Unauthorized Actor.
 
 ## How to find the flag
 

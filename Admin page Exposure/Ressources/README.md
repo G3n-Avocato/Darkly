@@ -6,15 +6,17 @@ A robots.txt file tells a search engine's crawlers which URLs it can access on y
 
 ## Breach type
 
-* A01:2021 - Broken Access Control   
+* A01:2021 - Broken Access Control  
+  
     Information Disclosure :
     * CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
     * CWE-285: Improper Authorization -- (the client user should not have the permissions to access hidden files and sensitive files)
-
+  
     Directory Traversal :
     * CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
 
-* A07:2021 - Identification and Authentication Failures
+* A07:2021 - Identification and Authentication Failures  
+      
     Broken Authentication :
     * CWE-287: Improper Authentication
 
@@ -32,7 +34,7 @@ A robots.txt file tells a search engine's crawlers which URLs it can access on y
 
 * In this file they are : `root:437394baff5aa33daa618be47b75cb49`
 
-* root is the username for admin page, the password is encrypt with MD5, to decrypt we use `https://md5decrypt.net/`, we obtain `qwerty123@`
+* root is the username for admin page, the password is encrypt with MD5, to decrypt we use https://md5decrypt.net/, we obtain `qwerty123@`
 
 * Return to the admin page, enter credentials
 

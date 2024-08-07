@@ -3,7 +3,7 @@
 IP spoofing allows you to pose as a reliable source to another machine, site, server, network. By using tools that allow you to modify the sender's source address in IP packets. This action only occurs at the network level.
 
 ## Breach type
-* A07:2021 – Identification and Authentication Failures
+* A07:2021 - Identification and Authentication Failures
     * CWE-290: Authentication Bypass by Spoofing
     * CWE-291: Reliance on IP Address for Authentication
     * CWE-348: Use of Less Trusted Source
