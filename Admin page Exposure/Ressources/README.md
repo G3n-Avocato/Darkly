@@ -54,7 +54,7 @@ A robots.txt file tells a search engine's crawlers which URLs it can access on y
 ## How to avoid
 
 * Admin page exposure: 
-    * Strengthen the password system, requiring a strong password policy, adding 2FA.
+    * Strengthen the password system, requiring a strong password policy, including the use of secure tokens and session expiration and adding 2FA.
     * Hide the url of the admin page. By making the URL of the administration page dynamic so that it changes regularly, a system must also be put in place so that real administrators have access without problem. It's also possible to limit access to this page to only certain IP addresses.  
 
 * Information disclosure:
@@ -64,7 +64,6 @@ A robots.txt file tells a search engine's crawlers which URLs it can access on y
     * Ensure sensitive information is stored in secure, non-public locations such as environment variables, secure databases, or encrypted files.
     * Validate and sanitize all inputs that might determine file paths or names to prevent unauthorized access or file placement.
     * Limit the access of information to only those who need it (minimum privilege required).
-    * Implement proper session management to prevent unauthorized access, including the use of secure tokens and session expiration.
 
 ## Sources
 * [Owasp Security Risk A01 - A07](https://owasp.org/www-project-top-ten/)
