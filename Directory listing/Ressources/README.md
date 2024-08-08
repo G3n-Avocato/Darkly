@@ -1,14 +1,16 @@
-# Hidden files and directories
+# Directory listing
+
+Web servers can be configured to automatically list the contents of directories that do not have an index page present. This can aid an attacker by enabling them to quickly identify the resources at a given path, and proceed directly to analyzing and attacking those resources. It particularly increases the exposure of sensitive files within the directory that are not intended to be accessible to users, such as temporary files and crash dumps.
 
 ## Breach type
 
 * A01:2021 - Broken Access Control  
   
     Information Disclosure:
+    * CWE-548: Exposure of Information Through Directory Listing
     * CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
     * CWE-285: Improper Authorization -- (the client user should not have the permissions to access hidden files and sensitive files)
     * CWE-538: Insertion of Sensitive Information into Externally-Accessible File or Directory: The product places sensitive information into files or directories that are accessible to actors who are allowed to have access to the files, but not to the sensitive information. 
-    * CWE-548: Exposure of Information Through Directory Listing
   
     Directory Traversal:
     * CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
