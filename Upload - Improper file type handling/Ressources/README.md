@@ -41,7 +41,7 @@ Now that we know that we just have to change the content type of the file to byp
 ## How to avoid
 
 * File format limitation: Limit allowed file types to only those necessary for the application.
-* Strong protection: Do not rely only on the MIME type nor the file extension to validate the uploaded file, as it can be easily bypassed.
+* Strong protection: Do not rely only on the MIME type nor the file extension to validate the uploaded file. For example you can use check the file's first bytes to verify its format (e.g., JPEG, PNG), or use specialized librairies such as `Pillow`.
 * Content Inspection: Thoroughly scan and validate the content of uploaded files, checking for malicious code or harmful content before making them accessible or processing them further.
 * Execute Permission Control: Ensure that directories used for storing uploaded files do not have execute permissions, preventing any script execution from those directories.
 * Sanitize Filenames: Remove all special, control, and Unicode characters from filenames and ensure filenames comply with strict regular expressions to prevent path traversal and injection attacks.

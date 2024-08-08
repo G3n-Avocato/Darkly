@@ -26,12 +26,12 @@ Every time a ressource or file is included by the application, there is a risk t
     * Use an "accept known good" input validation strategy, with list of acceptable inputs, reject any input that does not strictly conform to specifications, or transform it into something taht does.
     * Consider all potentially relevant properties, use allowlist that limit the character set to be used, only allow a single '.' character to avoid CWE-23, exclude directory separators such as '/' or '\', to avoid CWE-36 
     * Use a list of allowable file extensions to avoid CWE-434: Unrestricted Upload of File with Dangerous Type.
-* Avoid User Input in File System Calls: Minimize the use of user input for file operations.
+* Avoid User Input in File System Calls: avoid passing user-supplied input to filesystem APIs altogether.
 * Use Indexes: Instead of actual filenames, use indexes or predefined values.
-* Restrict Path Construction: Surround user input with predefined path code to restrict path traversal.
+* Restrict Path Construction: ensure the user cannot supply all parts of the path – surround it with your path code 
 * Use chrooted jails or similar sandbox, restrict users' access to their personal directory by creating a "virtual prison" where each user will be isolated in their own cell
-* Store librairy, include and utility files outside of the web document root. Otherwise, store them in a separate directory and use the web server's access control capabilities to prevent attackers to access it.
-* Use Firewall that can detect attacks against this weakness. 
+* Store sensitive libraries, includes and utility files outside of the web document root. Otherwise, store them in a separate directory and use the web server's access control capabilities to prevent attackers to access it.
+* Use Firewall that can detect attacks (such as fake urls) against this weakness.
 
 ## Sources
 * https://cwe.mitre.org/data/definitions/22.html

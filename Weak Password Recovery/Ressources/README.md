@@ -27,17 +27,17 @@ This vulnerability is related to password recovery mechanisms that are insecure 
 
 ## How to avoid
 
-* Use good security practices for the reset identifiers:
-    * Ensure that the time taken for the user response message is uniform
-    * Use a side-channel to communicate the method to reset their password (sms, others app)
-    * Use URL tokens like Json Web Tokens
+* Use good security practices for the password reset identifiers:
+    * Use a side-channel to communicate the method to reset their password (ex: sms, other apps)
+    * Use URL tokens like `Json Web Tokens`
     * Ensure that generated tokens or codes are:
         * Randomly generated using a cryptographically safe algorithm
-        * Long enought to protect against brute-force attacks
+        * Long enough to protect against brute-force attacks
         * Stored securely
         * Single use and expire after an appropriate time.
 * To avoid attacker enumerating which accounts exist, return a consistent message for both existent and non-existent accounts.
 * Remove or do not install unused features and frameworks.
+* Ensure that the time taken for the user response message is uniform or fully randomized (to block script analyzing response time to deduce if a login was successful or not)
 
 ## Sources
 

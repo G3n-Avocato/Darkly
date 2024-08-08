@@ -61,7 +61,7 @@ Enter the following commands:
 
 * Use `LIMIT` eveywhere in the Database to limit the data display in case of attack
 
-* Use SQLi detection tools each time app is update, in the event the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability was fixed.
+* Use SQLi detection tools each time app is updated. If the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability is fixed.
 
 ## Sources
 * https://owasp.org/Top10/fr/A03_2021-Injection/
