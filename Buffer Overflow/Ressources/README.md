@@ -13,7 +13,7 @@ Writing outside the bounds of an allocated memory block can corrupt data, crash 
 * Choose and inspect a survey grade field with the console `<select name="valeur" onchange="javascript:this.form.submit();">`
     * Here we understand that the value is submitted to the form on change
 * Modify the html to cause an overflow of the grade input `<option value="2">99999999999999999999999</option>`
-    * Select the grade "1" and it's done!
+    * Select the grade "2" and it's done!
 
 ## Risks
 
