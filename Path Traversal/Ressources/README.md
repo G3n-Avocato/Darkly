@@ -34,8 +34,8 @@ Every time a ressource or file is included by the application, there is a risk t
 * Use Firewall that can detect attacks (such as fake urls) against this weakness.
 
 ## Sources
-* https://cwe.mitre.org/data/definitions/22.html
-* https://book.hacktricks.xyz/pentesting-web/file-inclusion
-* https://owasp.org/www-community/attacks/Path_Traversal
-* https://github.com/JahTheTrueGod/Directory-Traversal-Cheat-Sheet
-* https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
+* [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
+* [Hacktricks Path Traversal](https://book.hacktricks.xyz/pentesting-web/file-inclusion)
+* [OWASP Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)
+* [Directory Traversal def](https://github.com/JahTheTrueGod/Directory-Traversal-Cheat-Sheet)
+* [OWASP A05:2021](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)

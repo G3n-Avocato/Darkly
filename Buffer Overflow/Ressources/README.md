@@ -34,6 +34,6 @@ This knowledge can be used for futher attacks with more consequences.
 * Perform security tests regularly to identify and correct potential vulnerabilities with updates.
 
 ## Sources
-* https://owasp.org/www-community/vulnerabilities/Buffer_Overflow
-* https://cwe.mitre.org/data/definitions/788.html
-* https://cwe.mitre.org/data/definitions/119.html
+* [OWASP Bufer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)
+* [CWE-788](https://cwe.mitre.org/data/definitions/788.html)
+* [CWE-119](https://cwe.mitre.org/data/definitions/119.html)

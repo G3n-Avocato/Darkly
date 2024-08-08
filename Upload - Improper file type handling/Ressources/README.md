@@ -47,7 +47,8 @@ Now that we know that we just have to change the content type of the file to byp
 * Sanitize Filenames: Remove all special, control, and Unicode characters from filenames and ensure filenames comply with strict regular expressions to prevent path traversal and injection attacks.
 
 ## Sources
-* https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
-* https://chocapikk.com/posts/2023/faille_upload/
-* https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types
-* https://cwe.mitre.org/data/definitions/434.html
+* [OWASP Unrestricted File Upload](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload)
+* [Fail Upload def](https://chocapikk.com/posts/2023/faille_upload/)
+* [Types MIME def](https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+* [CWE-434](https://cwe.mitre.org/data/definitions/434.html)
+* [CWE-351](https://cwe.mitre.org/data/definitions/351.html)

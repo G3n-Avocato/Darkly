@@ -53,8 +53,8 @@ It's necessary to use these methods together in order to be truly protected agai
 * Migrate sites to IPv6, it makes Ip IP spoofing harder by including encryption and authentication steps. High proportion of the world's internet traffic still uses IPv4.
 
 ## Sources
-* https://owasp.org/www-community/pages/attacks/ip_spoofing_via_http_headers
-* https://www.baeldung.com/linux/curl-test-ip-spoofing
-* https://en.wikipedia.org/wiki/IP_address_spoofing#:~:text=In%20computer%20networking%2C%20IP%20address,of%20impersonating%20another%20computing%20system
-* https://usa.kaspersky.com/resource-center/threats/ip-spoofing
-* https://cwe.mitre.org/data/definitions/290.html
+* [IP Spoofing via HTTP Headers](https://owasp.org/www-community/pages/attacks/ip_spoofing_via_http_headers)
+* [Test CMD curl](https://www.baeldung.com/linux/curl-test-ip-spoofing)
+* [IP Spoofing Wikipedia](https://en.wikipedia.org/wiki/IP_address_spoofing#:~:text=In%20computer%20networking%2C%20IP%20address,of%20impersonating%20another%20computing%20system)
+* [IP Spoofing def](https://usa.kaspersky.com/resource-center/threats/ip-spoofing)
+* [CWE-290](https://cwe.mitre.org/data/definitions/290.html)
