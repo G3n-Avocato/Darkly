@@ -35,8 +35,8 @@ XSS is a code injection vulnerability like SQL injections, in which malicious sc
 * Security review of the code to search for all places where input from an HTTP request could possibly make its way into the HTML output.
 
 ## Sources
-* https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/
-* https://en.wikipedia.org/wiki/Cross-site_scripting
-* https://owasp.org/www-community/Types_of_Cross-Site_Scripting
-* https://owasp.org/Top10/A03_2021-Injection/
-* https://cwe.mitre.org/data/definitions/79.html
+* [vaadata XSS attacks](https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/)
+* [Wikipedia Cross Site Scripting](https://en.wikipedia.org/wiki/Cross-site_scripting)
+* [OWASP Types of Cross Site Scripting](https://owasp.org/www-community/Types_of_Cross-Site_Scripting)
+* [OWASP A03:2021](https://owasp.org/Top10/A03_2021-Injection/)
+* [CWE-79](https://cwe.mitre.org/data/definitions/79.html)

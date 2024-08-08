@@ -66,7 +66,7 @@ A robots.txt file tells a search engine's crawlers which URLs it can access on y
     * Limit the access of information to only those who need it (minimum privilege required).
 
 ## Sources
-* [Owasp Security Risk A01 - A07](https://owasp.org/www-project-top-ten/)
+* [OWASP Security Risk A01 - A07](https://owasp.org/www-project-top-ten/)
 * [CWE-200](https://cwe.mitre.org/data/definitions/200.html)
 * [CWE-285](https://cwe.mitre.org/data/definitions/285.html)
 * [CWE-22](https://cwe.mitre.org/data/definitions/22.html)

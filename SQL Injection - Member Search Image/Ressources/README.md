@@ -60,9 +60,9 @@ Enter the following commands:
 * Use SQLi detection tools each time app is update, in the event the vulnerability cannot be fixed immediately, using a firewall allows you to patch while the vulnerability was fixed.
 
 ## Sources
-* https://owasp.org/Top10/fr/A03_2021-Injection/
-* https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/
-* https://www.sqlinjection.net/table-names/
-* https://www.sqlinjection.net/column-names/
-* https://www.acunetix.com/websitesecurity/sql-injection/
-* https://www.invicti.com/learn/in-band-sql-injection/
+* [OWASP A03:2021](https://owasp.org/Top10/fr/A03_2021-Injection/)
+* [SQL Injection impact and good practice](https://www.vaadata.com/blog/fr/injections-sql-principes-impacts-exploitations-bonnes-pratiques-securite/)
+* [SQL Injection table name](https://www.sqlinjection.net/table-names/)
+* [SQL Injection column name](https://www.sqlinjection.net/column-names/)
+* [SQL Injection def](https://www.acunetix.com/websitesecurity/sql-injection/)
+* [SQL Injection source](https://www.invicti.com/learn/in-band-sql-injection/)

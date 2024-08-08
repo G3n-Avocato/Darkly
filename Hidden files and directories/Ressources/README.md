@@ -8,6 +8,7 @@
     * CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
     * CWE-285: Improper Authorization -- (the client user should not have the permissions to access hidden files and sensitive files)
     * CWE-538: Insertion of Sensitive Information into Externally-Accessible File or Directory: The product places sensitive information into files or directories that are accessible to actors who are allowed to have access to the files, but not to the sensitive information. 
+    * CWE-548: Exposure of Information Through Directory Listing
   
     Directory Traversal:
     * CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
@@ -38,6 +39,9 @@
 * Implement proper session management to prevent unauthorized access, including the use of secure tokens and session expiration.
 
 ## Sources
-* [CWE-548](https://cwe.mitre.org/data/definitions/548.html)
+* [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
+* [CWE-200](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-285](https://cwe.mitre.org/data/definitions/285.html)
 * [CWE-538](https://cwe.mitre.org/data/definitions/538.html)
+* [CWE-548](https://cwe.mitre.org/data/definitions/548.html)
 * [Explanation robots.txt file](https://robots-txt.com/)

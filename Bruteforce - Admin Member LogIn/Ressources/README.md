@@ -77,9 +77,9 @@ We can now go to the Signin page and log in with :
 * Deploy Web Application Firewalls (WAFs) to block malicious traffic and enforce security policies.
 
 ## Sources
-* https://cwe.mitre.org/data/definitions/521.html
-* https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
-* https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy
-* https://www.itsasap.com/blog/how-to-prevent-brute-force-attacks
-* https://jetpack.com/blog/weak-passwords/
-* https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/
+* [CWE-521](https://cwe.mitre.org/data/definitions/521.html)
+* [Good authentication practice](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+* [Testing for Weak Password Policy](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy)
+* [How to prevent Brute Force attacks](https://www.itsasap.com/blog/how-to-prevent-brute-force-attacks)
+* [Risks Weak Password](https://jetpack.com/blog/weak-passwords/)
+* [OWASP A07:2021](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)

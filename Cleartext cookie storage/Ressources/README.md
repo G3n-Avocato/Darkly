@@ -37,7 +37,7 @@ Algorythm MD5:
 * Authentication Best Practices: Do not rely solely on cookies for user authentication; combine them with secure sessions (2FA) and server-side checks (checking inputs without processing them).
 
 ## Sources
-* https://owasp.org/Top10/fr/A05_2021-Security_Misconfiguration/
-* https://cwe.mitre.org/data/definitions/315.html
-* https://stackoverflow.com/questions/3206622/is-putting-data-in-cookies-secure
-* https://cwe.mitre.org/data/definitions/1004.html
+* [OWASP A05:2021](https://owasp.org/Top10/fr/A05_2021-Security_Misconfiguration/)
+* [CWE-315](https://cwe.mitre.org/data/definitions/315.html)
+* [Authenticate and Cookie Storage](https://stackoverflow.com/questions/3206622/is-putting-data-in-cookies-secure)
+* [CWE-1004](https://cwe.mitre.org/data/definitions/1004.html)

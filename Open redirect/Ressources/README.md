@@ -26,6 +26,7 @@ Unvalidated redirects and forwards are possible when a web application accepts u
 * Avoid Direct User Input in Redirects: Do not use user input directly in redirect URLs! Instead, use server-side logic to determine the target URL. The construction of the URLs server-side is the best way to avoid manipulation by the user!
 
 ## Sources
-* https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/
-* https://en.wikipedia.org/wiki/Cross-site_scripting
-* https://owasp.org/www-community/attacks/xss/
+* [vaadata XSS attacks](https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/)
+* [Wikipedia Cross Site Scripting](https://en.wikipedia.org/wiki/Cross-site_scripting)
+* [OWASP Cross Site Scripting XSS](https://owasp.org/www-community/attacks/xss/)
+* [CWE-601](https://cwe.mitre.org/data/definitions/601.html)
