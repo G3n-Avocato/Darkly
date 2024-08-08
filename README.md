@@ -1,2 +1,2 @@
 # Darkly
-42 Project Web Security
+42 School Web Security Project

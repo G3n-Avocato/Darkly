@@ -32,10 +32,10 @@ This vulnerability is related to password recovery mechanisms that are insecure 
     * Use a side-channel to communicate the method to reset their password (sms, others app)
     * Use URL tokens like Json Web Tokens
     * Ensure that generated tokens or codes are:
-        - Randomly generated using a cryptographically safe algorithm
-        - Long enought to protect against brute-force attacks
-        - Stored securely
-        - Single use and expire after an appropriate time.
+        * Randomly generated using a cryptographically safe algorithm
+        * Long enought to protect against brute-force attacks
+        * Stored securely
+        * Single use and expire after an appropriate time.
 * To avoid attacker enumerating which accounts exist, return a consistent message for both existent and non-existent accounts.
 * Remove or do not install unused features and frameworks.
 

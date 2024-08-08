@@ -2,7 +2,15 @@
 
 ## Breach type
 
-* Exposure of Information Through Directory Listing (CWE-548): This vulnerability occurs when a web server discloses the existence of files and directories that are not intended to be publicly accessible. This can be achieved through blind guessing attacks or by exploiting server misconfigurations that enable directory listings 5.
+* A01:2021 - Broken Access Control  
+  
+    Information Disclosure:
+    * CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+    * CWE-285: Improper Authorization -- (the client user should not have the permissions to access hidden files and sensitive files)
+    * CWE-538: Insertion of Sensitive Information into Externally-Accessible File or Directory: The product places sensitive information into files or directories that are accessible to actors who are allowed to have access to the files, but not to the sensitive information. 
+  
+    Directory Traversal:
+    * CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
 
 ## How to find the flag
 
@@ -15,8 +23,21 @@
 
 ## Risks
 
+* Information disclosure:
+    * Information disclosure often serves as a stepping stone for chaining with other vulnerabilities, leading to more severe attacks like SQL injection, command injection, or remote code execution.
+    * If paths or sensitive data are present, they can be exploited to allow other attacks on your site, such as data recovery (backup files or old versions of the application that might still contain sensitive data, which can be recovered and exploited) or an unauthorized connection on the administrator page for example.
 
 ## How to avoid
 
+* Do not include paths to sensitive or restricted resources in the robots.txt file, this file is publicly accessible, its function is not to prevent access to the resources it contains.
+* Protect access to sensitive resources like hidden file, and do not store password files on the site.
+* Avoid storing sensitive information (e.g., passwords, API keys, personal data) in files or directories that can be accessed externally.
+* Ensure sensitive information is stored in secure, non-public locations such as environment variables, secure databases, or encrypted files.
+* Validate and sanitize all inputs that might determine file paths or names to prevent unauthorized access or file placement.
+* Limit the access of information to only those who need it (minimum privilege required).
+* Implement proper session management to prevent unauthorized access, including the use of secure tokens and session expiration.
 
 ## Sources
+* [CWE-548](https://cwe.mitre.org/data/definitions/548.html)
+* [CWE-538](https://cwe.mitre.org/data/definitions/538.html)
+* [Explanation robots.txt file](https://robots-txt.com/)
